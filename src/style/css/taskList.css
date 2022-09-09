@@ -1,0 +1,13 @@
+/*========== COLORS ===============================================*/
+/*---List Colors---*/
+/*========== FONTS ================================================*/
+/*---List Fonts---*/
+/*========== MIXINS ==========*/
+.tasks-list-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 2rem;
+}
+
+/*# sourceMappingURL=taskList.css.map */

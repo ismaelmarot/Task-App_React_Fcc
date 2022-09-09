@@ -1,0 +1,40 @@
+@use '_variables' as var
+@use '_mixins' as mix
+
+.task-container
+  @include mix.flexRow(space-between,center)
+  @include mix.setHeightWidth(auto,40rem)
+  background-color: nth(var.$listColors,1)
+  margin: .20rem 0
+  padding: 0
+  border-radius: .5rem
+  border: .1rem solid white
+  cursor: pointer
+
+  &:nth-child(3n + 1)
+    background-color: nth(var.$listColors,6)
+
+  &:nth-child(3n + 2)
+    background-color: nth(var.$listColors,7)
+
+  &:nth-child(3n + 3)
+    background-color: nth(var.$listColors,8)
+
+.task-container.completed
+  color: #5a01a7
+  text-decoration: line-through
+
+.task-text
+  width: 100%
+  display: flex
+  align-items: center
+  flex-wrap: wrap
+  box-sizing: border-box
+  font-size: 2rem
+  overflow-wrap: anywhere
+  padding: 1rem
+
+.task-icon
+  width: 2rem
+  height: 2rem
+  margin: .5rem

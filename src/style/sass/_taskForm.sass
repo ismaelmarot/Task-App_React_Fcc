@@ -1,0 +1,27 @@
+@use '_variables' as var
+@use '_mixins' as mix
+
+.task-form
+  @include mix.flexRow(center,center)
+  flex-wrap: wrap
+
+.task-input
+  width: 350px
+  font-size: 18px
+  background-color: white
+  padding: .85rem .5rem
+  border: .2rem solid nth(var.$listColors,5)
+  border-radius: .5rem 0 0 .5rem
+  outline: none
+
+.task-button
+  padding: 1rem
+  font-size: 1.2rem
+  font-family: nth(var.$listFonts,1)
+  border: none
+  border-radius: 0 .5rem .5rem 0
+  cursor: pointer
+  outline: none
+  background-color: nth(var.$listColors,5)
+  color: nth(var.$listColors,3)
+  text-transform: capitalize

@@ -1,0 +1,24 @@
+@use '_variables' as var
+@use '_mixins' as mix
+
+body
+  color: white
+
+.App
+  @include mix.flexColumn(center,center)
+  @include mix.setHeightWidth(auto,100%)
+  min-height: 100vh
+  background-color: nth(var.$listColors,1)
+
+.tasks-list-main
+  @include mix.flexColumn(center,center)    
+  width: 60rem
+  min-height: 30rem
+  background-color: nth(var.$listColors,4)
+  margin: 3rem
+  border-radius: .5rem
+  h1
+    color: nth(var.$listColors,1)
+    font-size: 2rem
+    font-family: nth(var.$listFonts,1)
+    margin: 2rem 0

@@ -1,0 +1,11 @@
+@use '_variables' as bar
+@use '_mixins' as mix
+
+.fCC-logo-container
+  @include mix.flexColumn(center,center)
+  width: 90%
+  max-width: 50rem
+  margin-top: 3rem
+
+  .fCC-logo
+    width: 100%
